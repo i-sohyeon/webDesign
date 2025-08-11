@@ -1,0 +1,61 @@
+@charset "utf-8";
+*{margin: 0; padding: 0; box-sizing: border-box;}
+li {list-style: none;}
+a {text-decoration: none; color: inherit;}
+img {vertical-align: top; border: none;}
+button {cursor: pointer;}
+body {background: #ffffff; color: #333333;}
+
+.wrap { width: 1200px; margin: 0 auto;}
+header {position: relative; width: 100%; height: 100px; padding: 25px 10px; background: #e02b2b; z-index: 10;}
+header h1 a img {width: 200px; height: auto;}
+header nav {position: absolute; top: 60px; right: 10px;}
+header nav > ul {display: flex;}
+header nav > ul > li {width: 120px;}
+header nav > ul > li > a {display: block; padding: 10px; background: #ffffff; border-right: 1px solid #e02b2b; text-align: center; font-weight: 700;}
+header nav > ul > li:hover > a {background: #000000; color: #ffffff;} 
+header nav > ul > li:last-child > a {border-right: 0;}
+header nav > ul > li .sub {display: none; background: #000000; color: #ffffff;}
+header nav > ul > li .sub > li > a {display: block; padding: 10px 0; text-align: center; font-size: 14px;}
+header nav > ul > li .sub > li:hover > a {background: #e02b2b;}
+section .slide { width: 1200px; height: 300px; overflow: hidden;}
+section .slide li {position: relative; width: 1200px; height: 300px;}
+section .slide li a {display: block; height: 100%;}
+section .slide li a h2 {display: inline-block; position: absolute; bottom: 10px; right: 10px; padding: 10px; border-radius: 10px 0 10px 0; background: rgba(0, 0, 0, .5); font-size: 20px; color: #ffffff;}
+section .slide .s1{background: url(../images/slide01.png) no-repeat center bottom/cover;}
+section .slide .s2{background: url(../images/slide02.png) no-repeat center bottom/cover;}
+section .slide .s3{background: url(../images/slide03.png) no-repeat center bottom/cover;}
+
+section .con{display: flex; width: 100%; height: 200px; }
+section .con article{width: 400px; padding: 15px;}
+section .con article > h2 {margin-bottom: 12px;}
+section .con article.tab > ul {position: relative; display: flex;}
+section .con article.tab .on > h2 > a {background:#e02b2b; color: #ffffff;}
+section .con article.tab ul .tabcon {position: absolute; left: 0; width: 360px; padding: 10px; background: #e02b2b;}
+/* section .con article.tab ul .tabcon.notice {display: none;} */
+section .con article.tab ul .tabcon.notice li {position: relative; padding: 5px 0; border-bottom: 1px dashed #ffffff; color: #ffffff; font-size: 14px;}
+section .con article.tab ul .tabcon.notice li:last-child{border-bottom: 0;}
+section .con article.tab ul .tabcon.notice li p {width: 260px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;} 
+section .con article.tab ul .tabcon.notice li span {position: absolute; top: 5px; right: 0px;}
+section .con article.tab ul .tabcon.gallery ul {display: flex; justify-content: center;}
+section .con article.tab ul .tabcon.gallery img {width: 100px;}
+section .con article.tab h2 a { display: inline-block; width: 120px; background: #ebebeb; padding: 5px 0; text-align: center; font-size: 20px;}
+.gallery {display: none;}
+
+section .con article.banner a {display: block; height: 100%;}
+section .con article.banner a .banner-box { width: 100%; background: url(../images/banner.png) no-repeat center left / cover;  height: 120px;  border-radius: 12px; text-align: right; padding: 20px; color: #ffffff;}
+section .con article.banner a .banner-box h3 {margin-bottom: 16px;}
+
+section .con article.go ul {display: flex;} 
+section .con article.go ul li {text-align: center; flex: 1;}
+section .con article.go img {width: 60px; padding: 10px; background: #111111; border-radius: 12px;} 
+section .con article.go span {display: block; margin-top: 12px;} 
+
+.popup {display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,.5); z-index: 9999;}
+.popup .popcon {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 500px; height: 300px; background: #ffffff; padding: 40px; border-radius: 20px;}
+.popup .popcon h2 {margin-bottom: 20px;}
+.popup .popcon p {margin-bottom: 40px;}
+.popup .popcon .button-box {text-align: right;}
+.popup .popcon .button-box button {border: none; background: #666666; color: #ffffff; padding: 10px;}
+.popup .popcon .button-box button:hover{background: #e02b2b;}
+footer {width: 100%; height: 100px; background: #666666;}
