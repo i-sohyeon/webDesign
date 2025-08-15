@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+li {list-style: none;}
+img {vertical-align: top; max-width: 100%;}
+a {text-decoration: none; color: inherit;}
+button {cursor: pointer; border: none;}
+body {background: #ffffff; color: #333333;}
+
+header {width: 100%; height: 100px; background: #3e67d6;}
+header .header-inner {position: relative; width: 1200px; height: 100px; margin: 0px auto; padding: 30px 0;}
+header .header-inner nav {position: absolute; top: 56px; right: 10px; z-index: 10;}
+header .header-inner nav > ul{display: flex; }
+header .header-inner nav > ul > li {text-align: center;}
+header .header-inner nav > ul > li > a {display: block; width: 120px; padding: 10px 0; font-size: 20px; color: #ffffff; font-weight: 700;;}
+header .header-inner nav > ul > li:hover > a {color: #ffcb3d;}
+header .header-inner nav > ul > li .sub {display: none; background: #ffffff;}
+header .header-inner nav > ul > li .sub > li > a {display: block; padding: 10px 0; font-size: 14px;}
+header .header-inner nav > ul > li .sub > li:hover > a {background: #ffcb3d; color: #333333;}
+/* header .header-inner h1 {} */
+section {width: 1200px; margin: 0px auto; }
+section .slide {width: 1200px; height: 300px; overflow: hidden;}
+section .slide ul {display: flex; width: 3600px;}
+section .slide ul > li {position: relative; width: 1200px; height: 300px;}
+section .slide li a {display: block;}
+section .slide li a h2 {display: inline-block; position:absolute; bottom: 10px; right: 10px; font-size: 16px; background: rgba(0,0,0,.5); padding: 10px; border-radius: 10px 0 10px 0; color: #ffffff;}
+section .slide .s1 {background: url(../images/slide01.png) no-repeat center/cover;}
+section .slide .s2 {background: url(../images/slide02.png) no-repeat center/cover;}
+section .slide .s3 {background: url(../images/slide03.png) no-repeat center/cover;}
+section .contents{display: flex; width: 1200px; height: 200px;}
+section .contents article {padding: 16px; width: 400px;}
+section .contents article > h2 {font-size: 20px; margin-bottom: 12px;}
+section .contents article.tab {position: relative; }
+section .contents article.tab > ul {display: flex;}
+section .contents article.tab > ul > li.on > a {background: #ffcb3d; color: #ffffff;}
+section .contents article.tab > ul > li > a {display: block; width: 100px; text-align: center; padding: 10px 0; background: #eeeeee;}
+section .contents article.tab > ul > li > a > h2 {font-size: 16px;}
+section .contents article.tab .tabcon {position: absolute; left: 16px; background: #ffcb3d; width: 360px; height: 125px; padding: 16px; border-radius: 0 0 12px 12px;}
+section .contents article.tab .tabcon.notice > ul > li {position: relative; font-size: 14px; border-bottom: 1px dashed #ffffff; padding: 4px 0;}
+section .contents article.tab .tabcon.notice > ul > li:last-child {border-bottom: 0;}
+section .contents article.tab .tabcon.notice > ul > li  p {width: 250px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+section .contents article.tab .tabcon.notice > ul > li span{position: absolute; right: 0; top: 5px;}
+section .contents article.tab .tabcon.gallery {display: none;}
+section .contents article.tab .tabcon.gallery ul {display: flex; justify-content: center;}
+section .contents article.tab .tabcon.gallery ul img {width: 96px; height: 96px; object-fit: cover;}
+section .contents article.banner a {display: block;}
+section .contents article.banner a img {width: 320px; height: 130px; object-fit: cover; border-radius: 12px;}
+section .contents article.go li {margin-bottom: 4px; padding: 8px 12px; background: #3e67d6; border: 1px solid #3e67d6; border-radius: 12px; transition: 1s; color: #ffffff;}
+section .contents article.go li:hover {background: #ffffff;  color: #333333;}
+section .contents article.go li:last-child {margin-bottom: 0;}
+section .contents article.go li a {display: block; align-items: center; font-size: 14px;}
+section .contents article.go li a div {display: flex; align-items: center;}
+section .contents article.go li a img { width: 24px; height: 24px; margin-right: 12px; border-radius: 4px;}
+footer {width: 100%; height: 100px; background-color: #666666;}
+footer .footer-inner {display: flex; align-items: center; width: 1200px; height: 100%; margin: 0px auto;} 
+footer .footer-inner > div .fmenu {display: flex;}
+footer .footer-inner > div .fmenu li {position: relative; margin-right: 16px;}
+footer .footer-inner > div .fmenu li:first-child::after{content: "";}
+footer .footer-inner > div .fmenu li::after {display: inline-block; position: absolute; content: "|"; top: 2px; left: -10px; color: #ffffff; font-size: 14px;}
+footer .footer-inner > div .fmenu li a {font-size: 14px; color: #ffffff;}
+footer .footer-inner > div .fcopy {font-size: 12px; margin-top:2px;}
+
+.popup {display: none; position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: 9999;}
+.popup .popcon {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #ffffff; padding: 60px; border: 2px solid #3e67d6; border-radius: 24px; width: 480px;}
+.popup .popcon h2 {margin-bottom: 20px;}
+.popup .img-box {text-align: center; margin-bottom: 20px;}
+.popup .img-box img {width: 240px;}
+.popup .popup-text {margin-bottom: 20px; text-align: center;}
+.popup .popup-close {text-align: right;}
+.popup .popup-close button {padding: 10px; border-radius: 4px; background: #3e67d6; color: #ffffff;}
+.popup .popup-close button:hover {background: #333333; }

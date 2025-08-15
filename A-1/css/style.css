@@ -52,10 +52,14 @@ section .con article.go img {width: 60px; padding: 10px; background: #111111; bo
 section .con article.go span {display: block; margin-top: 12px;} 
 
 .popup {display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,.5); z-index: 9999;}
-.popup .popcon {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 500px; height: 300px; background: #ffffff; padding: 40px; border-radius: 20px;}
+.popup .popcon {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 500px; background: #ffffff; padding: 40px; border-radius: 20px;}
 .popup .popcon h2 {margin-bottom: 20px;}
 .popup .popcon p {margin-bottom: 40px;}
 .popup .popcon .button-box {text-align: right;}
 .popup .popcon .button-box button {border: none; background: #666666; color: #ffffff; padding: 10px;}
 .popup .popcon .button-box button:hover{background: #e02b2b;}
-footer {width: 100%; height: 100px; background: #666666;}
+footer {display: flex; position: relative; width: 100%; height: 100px; background: #666666; padding: 0 20px; align-items: center;}
+footer .flogo {margin-right: 30px;}
+footer .fsns {position: absolute; top: 50%; right: 20px; transform: translateY(-50%);  display: flex;}
+footer .fsns li {margin-right: 10px;} 
+footer .fsns img {width: 32px; }
