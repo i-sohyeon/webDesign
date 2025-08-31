@@ -31,30 +31,30 @@ section.slide li.s1 {background: url(../images/slide01.jpg) no-repeat center/cov
 section.slide li.s2 {background: url(../images/slide02.jpg) no-repeat center/cover;}
 section.slide li.s3 {background: url(../images/slide03.jpg) no-repeat center/cover;}
 
-section.contents {display: flex; width: 760px; height: 200px;}
-section.contents article {padding: 12px; box-sizing: border-box;}
-section.contents article.tabs {width: 320px;}
-section.contents article.tabs > ul {display: flex; position: relative;}
-section.contents article.tabs > ul > li h2 {width: 100px; padding: 10px 0; background: #eeeeee; border-radius: 12px 12px 0 0; font-size: 20px; text-align: center;}
-section.contents article.tabs > ul > li.on h2{background: var(--main-color); color: #ffffff;}
-section.contents article.tabs > ul > li > a {display: block;}
-section.contents article.tabs .tabcon {position: absolute; left: 0; width: 296px; height: 128px; padding: 12px; border: 2px solid var(--main-color); border-radius: 0 12px 12px 12px;}
-section.contents article.tabs .tabcon.notice > ul > li {padding: 4px 0; font-size: 14px; border-bottom: 1px dashed var(--main-color);}
-section.contents article.tabs .tabcon.notice > ul > li a {display: flex; justify-content: space-between;}
-section.contents article.tabs .tabcon.notice > ul > li p {width: 200px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.contents {display: flex; width: 760px; height: 200px;}
+.contents article {padding: 12px; box-sizing: border-box;}
+.contents article.tabs {width: 320px;}
+.contents article.tabs > ul {display: flex; position: relative;}
+.contents article.tabs > ul > li h2 {width: 100px; padding: 10px 0; background: #eeeeee; border-radius: 12px 12px 0 0; font-size: 20px; text-align: center;}
+.contents article.tabs > ul > li.on h2{background: var(--main-color); color: #ffffff;}
+.contents article.tabs > ul > li > a {display: block;}
+.contents article.tabs .tabcon {position: absolute; left: 0; width: 296px; height: 128px; padding: 12px; border: 2px solid var(--main-color); border-radius: 0 12px 12px 12px;}
+.contents article.tabs .tabcon.notice > ul > li {padding: 4px 0; font-size: 14px; border-bottom: 1px dashed var(--main-color);}
+.contents article.tabs .tabcon.notice > ul > li a {display: flex; justify-content: space-between;}
+.contents article.tabs .tabcon.notice > ul > li p {width: 200px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
 
-section.contents article.tabs .tabcon.gallery {display: none;}
-section.contents article.tabs .tabcon.gallery ul {display: flex; gap: 6px; margin-top: 10px;}
-section.contents article.tabs .tabcon.gallery ul li img{width: 80px; height: 80px; object-fit: cover;}
-section.contents article.banner h2, .go h2 {font-size: 20px; margin: 8px 0;}
-section.contents article.banner {width: 280px;}
-section.contents article.banner a {display: block;}
-section.contents article.banner a img {width: 100%; height: 130px; object-fit: cover; border-radius: 12px;}
-section.contents article.go {width: 160px; height: 100%;}
-section.contents article.go ul > li {margin-bottom: 4px;}
-section.contents article.go ul > li > a {display: flex; align-items: center; justify-content: space-between; padding: 4px 8px; border: 2px solid var(--main-color); border-radius: 12px; transition: 0.5s;}
-section.contents article.go ul > li > a:hover {border: 2px solid var(--sub-color); color: var(--sub-color);}
-section.contents article.go ul > li > a >img {width: 32px; height: 32px; object-fit: cover;}
+.contents article.tabs .tabcon.gallery {display: none;}
+.contents article.tabs .tabcon.gallery ul {display: flex; gap: 6px; margin-top: 10px;}
+.contents article.tabs .tabcon.gallery ul li img{width: 80px; height: 80px; object-fit: cover;}
+.contents article.banner h2, .go h2 {font-size: 20px; margin: 8px 0;}
+.contents article.banner {width: 280px;}
+.contents article.banner a {display: block;}
+.contents article.banner a img {width: 100%; height: 130px; object-fit: cover; border-radius: 12px;}
+.contents article.go {width: 160px; height: 100%;}
+.contents article.go ul > li {margin-bottom: 4px;}
+.contents article.go ul > li > a {display: flex; align-items: center; justify-content: space-between; padding: 4px 8px; border: 2px solid var(--main-color); border-radius: 12px; transition: 0.5s;}
+.contents article.go ul > li > a:hover {border: 2px solid var(--sub-color); color: var(--sub-color);}
+.contents article.go ul > li > a >img {width: 32px; height: 32px; object-fit: cover;}
 
 .popup {
   display: none;
