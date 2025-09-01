@@ -1,0 +1,93 @@
+@charset "utf-8";
+:root{
+  --main-color: #217131;
+  --sub-color: #fed500;
+}
+
+*{margin: 0; padding: 0;}
+a {text-decoration: none; color: inherit;}
+ol, ul, li {list-style: none;}
+img {vertical-align: top; max-width: 100%;}
+button {cursor: pointer; border: none;}
+body {background: #ffffff; color: #333333;}
+
+.wrap .top {display: flex;  width: 100%;}
+.wrap .main {width: calc(100% - 200px); height: auto;}
+header {position: relative; width: 200px; height: 850px; background: var(--main-color); padding: 20px 12px; box-sizing: border-box;}
+header h1 {text-align: center;}
+header h1 a { display: block;}
+header nav {margin-top: 40px;}
+header nav > ul > li:hover > a {background: var(--sub-color); color: #333333;}
+header nav > ul > li > a {display: block; padding: 12px 20px; border: 1px solid var(--sub-color); border-bottom: none; color: #ffffff; font-weight: bold;}
+header nav > ul > li:last-child > a {border-bottom: 1px solid var(--sub-color);}
+header nav .sub {display: none; background: #ffffff;}
+header nav .sub > li {text-align: center;}
+header nav .sub > li:hover > a {background: #dbdbdb; color: var(--main-color);}
+header nav .sub > li > a {display: block; padding: 10px 0;}
+header .spot-menu {display: flex; justify-content: center; margin-top: 24px;}
+header .spot-menu li {position: relative; margin-right: 24px;}
+header .spot-menu li::after {display: inline-block; content: "|"; position: absolute; color: #ffffff; right: -14px; top: 0px;}
+header .spot-menu li:last-child {margin-right: 0;}
+header .spot-menu li:last-child::after {display: none;}
+header .spot-menu li a {color: #ffffff;}
+
+section.slide {width: 100%; height: 400px; overflow: hidden;}
+section.slide ul {width: 100%; height: 400px; }
+section.slide ul li {position: relative; width: 100%; height: 400px;}
+section.slide ul li a {display: block; height: 100%;}
+section.slide h2 {display: inline-block; position: absolute; top: 40px; left: 0; padding: 12px 24px; background: rgba(0,0,0,.8); border-radius: 0 36px 36px 0; color: #ffffff; font-size: 20px;}
+section.slide .s1 {background: url(../images/slide01.jpeg) no-repeat center/cover;}
+section.slide .s2 {background: url(../images/slide02.jpeg) no-repeat center/cover;}
+section.slide .s3 {background: url(../images/slide03.jpeg) no-repeat center/cover;}
+.go {position: fixed; position: fixed; top: 12px; right: 0; padding: 16px 10px; background: var(--sub-color); border-radius: 12px 0 0 12px;}
+.go li {margin-bottom: 12px; padding-bottom: 2px; border-bottom: 1px solid #ffffff;}
+.go li:last-child{margin-bottom: 0;}
+.go li a {display: block; text-align: center;}
+.go li a:hover {background: #ffffff;}
+.go li a img {width: 28px; height: 28px; object-fit: cover; margin-bottom: 4px;}
+.go li a span {display: block; font-size: 12px;}
+.contents article {display: block; box-sizing: border-box;}
+.contents .banner {height: 200px; padding: 12px; overflow: hidden;}
+.contents .banner .banner-con {display: flex; align-items: center; padding: 12px; border: 2px solid var(--main-color); border-radius: 24px;}
+.contents .banner .banner-con img{ width: 150px; height: 150px; object-fit: cover; border-radius: 50%;}
+.contents .banner .banner-con .banner-text {margin-left: 60px;}
+.contents .banner .banner-con .banner-text h2 {font-size: 24px;}
+.contents .banner .banner-con .banner-text span {display: inline-block; font-size: 14px; margin-top: 24px;}
+.contents .banner a {transition: 0.5s;}
+.contents .banner a:hover { background: var(--main-color); color: #ffffff;}
+.contents .banner a img {object-fit: cover;}
+
+.contents .tabs {position: relative; height: 250px; padding: 12px;}
+.contents .tabs > ul {display: flex;}
+.contents .tabs > ul > li {width: 100px; background: #dbdbdb; text-align: center;}
+.contents .tabs > ul > li:first-child {border-radius: 12px 0 0 0;}
+.contents .tabs > ul > li:last-child {border-radius: 0 12px 0 0;}
+.contents .tabs > ul > li.on {background: var(--main-color); color: #ffffff;}
+.contents .tabs > ul > li > h2 {font-size: 20px;}
+.contents .tabs > ul > li > h2 >  a {display: block; padding: 8px 0;}
+.contents .tabs li .tabcon {position: absolute; left: 12px; box-sizing: border-box; width: calc(100% - 24px); height: 180px; padding: 20px 12px; text-align: left; background: var(--main-color);}
+.contents .tabs li .tabcon.notice {}
+.contents .tabs li .tabcon.notice ul {}
+.contents .tabs li .tabcon.notice ul > li {position: relative; border-bottom: 1px dashed #ffffff; padding: 4px 0;}
+.contents .tabs li .tabcon.notice ul > li p {width: 580px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.contents .tabs li .tabcon.notice ul > li span {position: absolute; top: 4px; right: 0;}
+.contents .tabs li .tabcon.gallery {display: none;}
+.contents .tabs li .tabcon.gallery ul {display: flex; gap: 16px; justify-content: center;}
+.contents .tabs li .tabcon.gallery ul a {transition: 0.5s;}
+.contents .tabs li .tabcon.gallery ul a:hover {opacity: 0.6;}
+.contents .tabs li .tabcon.gallery ul a img {width: 270px; height: 140px; object-fit: cover;}
+
+.popup {display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;}
+.popup .popcon {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 40px 52px; background: #ffffff; border: 2px solid var(--main-color); border-radius: 24px;}
+.popup .popcon h2 {margin-bottom: 20px;}
+.popup .popcon img {display: block; width: 200px; margin: 0 auto; margin-bottom: 16px;}
+.popup .popcon p {margin-bottom: 20px;}
+.popup .popcon .button-box {text-align: right;}
+.popup .popcon .button-box button {padding: 12px 24px; background: var(--main-color); color: #ffffff; border-radius: 4px;}
+.popup .popcon .button-box button:hover {background: var(--sub-color); color: #333333;}
+footer {width: 100%; height: 100px; box-sizing: border-box; background: #666666; padding: 32px;}
+footer > div {display: flex; justify-content: space-between; align-items: center;}
+footer .sns > ul {display: flex;}
+footer .sns > ul > li {margin-right: 20px;}
+footer .sns > ul > li:last-child {margin-right: 0;}
+footer .sns > ul > li img {width: 32px; height: 32px; object-fit: cover;}
