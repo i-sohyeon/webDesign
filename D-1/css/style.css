@@ -66,8 +66,6 @@ section.slide .s3 {background: url(../images/slide03.jpeg) no-repeat center/cove
 .contents .tabs > ul > li > h2 {font-size: 20px;}
 .contents .tabs > ul > li > h2 >  a {display: block; padding: 8px 0;}
 .contents .tabs li .tabcon {position: absolute; left: 12px; box-sizing: border-box; width: calc(100% - 24px); height: 180px; padding: 20px 12px; text-align: left; background: var(--main-color);}
-.contents .tabs li .tabcon.notice {}
-.contents .tabs li .tabcon.notice ul {}
 .contents .tabs li .tabcon.notice ul > li {position: relative; border-bottom: 1px dashed #ffffff; padding: 4px 0;}
 .contents .tabs li .tabcon.notice ul > li p {width: 580px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 .contents .tabs li .tabcon.notice ul > li span {position: absolute; top: 4px; right: 0;}
